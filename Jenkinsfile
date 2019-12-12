@@ -5,6 +5,7 @@ node {
     }
 
     stage('Update') {
+        def build = Thread.currentThread().executable
         def workspace = build.getEnvVars()["WORKSPACE"]
         def xml = new File(workspace, 'config.xml').text
 
