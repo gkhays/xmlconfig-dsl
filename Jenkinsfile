@@ -3,11 +3,14 @@ node {
     stage('Checkout') {
         git 'https://github.com/gkhays/xmlconfig-dsl'
     }
-    
-    stage('Update') {            
-        def testEnv = new XmlParser().parseText('config.xml')
+
+    stage('Update') {
+        def pathBase = new File(".").getCanonicalPath();
+        def xml = new File(pathBase, "config.xml").text
+
+        def testEnv = new XmlParser().parseText(xml)
         testEnv.ApplicationServer.IP[0].replaceNode {
-            IP("10.204.96.24")
+            IP("192.168.2.24")
         }
         println(testEnv.ApplicationServer.IP.text())           
     }
