@@ -1,0 +1,7 @@
+<TestEnvironment>
+    <ApplicationServer>
+        <IP>192.168.1.1</IP>
+        <Protocol>http</Protocol>
+        <Port>8080</Port>
+    </ApplicationServer>
+</TestEnvironment>
