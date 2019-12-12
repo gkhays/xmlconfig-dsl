@@ -5,8 +5,9 @@ node {
     }
 
     stage('Update') {
-        def pathBase = new File(".").getCanonicalPath();
-        def xml = new File(pathBase, "config.xml").text
+        //def pathBase = new File(".").getCanonicalPath();
+        //def xml = new File(pathBase, "config.xml").text
+        def xml = new File("config.xml")
 
         def testEnv = new XmlParser().parseText(xml)
         testEnv.ApplicationServer.IP[0].replaceNode {
