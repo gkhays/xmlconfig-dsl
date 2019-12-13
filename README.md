@@ -5,4 +5,4 @@ Jenkins pipeline DSL to update an XML file
 
 [![Test](https://img.shields.io/badge/Better-Together-blue.svg)](https://github.com/gkhays)
 
-[![asciicast](https://asciinema.org/a/287871.svg)](https://asciinema.org/a/287871?speed=10&autoplay=1&preload=1)
+[![asciicast](https://asciinema.org/a/287871.svg)](https://asciinema.org/a/287871?speed=25&autoplay=1&preload=1)
