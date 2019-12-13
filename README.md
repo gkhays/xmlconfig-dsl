@@ -1,8 +1,8 @@
 # xmlconfig-dsl
 Jenkins pipeline DSL to update an XML file
 
-### Random badges
+Start the Jenkins Blue Ocean pipeline container.
 
-[![Test](https://img.shields.io/badge/Better-Together-blue.svg)](https://github.com/gkhays)
-
-[![asciicast](https://asciinema.org/a/287871.svg)](https://asciinema.org/a/287871?speed=25&autoplay=1&preload=1)
+```
+docker run -d --name jenkinsci -p "8080:8080" -p "50000:50000" -e "-Djenkins.install.runSetupWizard=true" jenkinsci/blueocean
+```
